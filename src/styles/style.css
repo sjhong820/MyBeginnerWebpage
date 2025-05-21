@@ -25,6 +25,7 @@ header h1 {
 body {
     margin: 0;
     padding: 0;
+    font-family: var(--font-family);
 }
 
 .navbar {
@@ -46,4 +47,72 @@ body {
 .navbar a:hover {
     background-color: var(--hover-color);
     color: var(--text-color);
+}
+
+.side {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left, .right {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left {
+    align-items: flex-start;
+        margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.right {
+    background-color: var(--bg-color);
+}
+
+.status {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+}
+
+#status-content {
+    background: #fff;
+    margin: 0 auto;
+    padding: 24px 16px;
+    border-radius: 12px;
+    width: 50%;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+    position: relative;
+    text-align: center;
+}
+
+#portrait-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin : 25px;
+}
+
+.info-list li{
+    margin-bottom: 10px;
+    font-size: larger;
+}
+
+.title-line {
+    width: 100%;
+    border: 0px;
+    border-top: 1px solid var(--text-color);
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
