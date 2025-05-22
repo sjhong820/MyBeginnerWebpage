@@ -90,6 +90,14 @@ body {
 
 .right {
     background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    color: var(--text-color);
+    width: 80%;
+    height: 100%;
 }
 
 #portrait-img {
@@ -114,9 +122,11 @@ body {
 }
 
 .fakeimg {
-    background-color: var(--sub-color);
+    background-color: var(--bg-color);
     width: 90%;
     padding: 20px;
+    justify-self: center;
+    margin: 0 auto;
 }
 
 .empty-space {
@@ -124,7 +134,7 @@ body {
 }
 
 .accordion {
-    width: 90%;
+    margin: 0 auto;
 }
 
 .accordion-header {
@@ -139,7 +149,6 @@ body {
     border-radius: 4px;
     transition: background 0.2s, color 0.2s;
     width: 100%;
-    
 }
 
 .accordion-header.active,
